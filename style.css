@@ -1,0 +1,58 @@
+*::before, *::after {
+    box-sizing: :border-box;
+    font-family: Gotham Rounded;
+}
+
+:root {
+    --blue: darkcyan;
+    --white: rgb(223, 240, 240);
+    --main: rgb(240, 219, 219);
+    --blue: darkcyan;
+    --darkgreen: rgb(7, 54, 7);
+    --aqua: hsl(177, 86%, 66%);
+    --black: rgb(34, 33, 33);
+    --hover: hsl(12, 74%, 46%);
+    --lavander: rgb(121, 195, 245);
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-size: 30px;      
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    border
+}
+.btn {
+    color: var(--white);
+    background-color: var(--lavander);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 20px 0;  
+}
+
+.btn:hover {
+    border-color: var(--black);
+}
+
+.start-btn, .next-btn {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        min-width: 40rem;
+    }
+}
