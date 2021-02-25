@@ -6,13 +6,10 @@
 :root {
     --blue: darkcyan;
     --white: rgb(223, 240, 240);
-    --main: rgb(240, 219, 219);
-    --blue: darkcyan;
-    --darkgreen: rgb(7, 54, 7);
-    --aqua: hsl(177, 86%, 66%);
+   --correct: rgb(129, 236, 129);
     --black: rgb(34, 33, 33);
-    --hover: hsl(12, 74%, 46%);
-    --lavander: rgb(121, 195, 245);
+    --wrong: hsl(12, 74%, 46%);
+    --lavander: rgb(28, 113, 173);
 }
 body {
     padding: 0;
@@ -25,7 +22,14 @@ body {
 }
 
 .container {
-    font-size: 30px;      
+    width: 600px;
+    mac-width: 80%;
+    font-size: 30px; 
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+
 }
 .btn-grid {
     display: grid;
@@ -42,13 +46,31 @@ body {
 }
 
 .btn:hover {
+    cursor: pointer;
     border-color: var(--black);
+    transform: scale(1.02);
+    transform: transform 100ms;
 }
 
+.btn.correct {
+    color: var(----correct);
+}
+
+.btn.wrong {
+    color; var(--wrong);
+}
 .start-btn, .next-btn {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 20px;    
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
