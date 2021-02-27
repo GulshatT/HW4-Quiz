@@ -3,9 +3,13 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const restartButton = document.getElementById('restart-btn')
+const resetButton = document.getElementById('reset-btn')
+
 
 let shuffledQuestions, currentQuestionIndex
 
+restartButton.addEventListener('click', startGame)
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
