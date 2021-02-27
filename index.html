@@ -9,12 +9,13 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <!---div class="score-container">
-    <div class="hud-item">
-        <p class="hu-prefix">Score</p>
-        <h1 class="hud-main" id="score">0</h1>
+    <header>
+    <div class="title">Welcome to Quiz App!</div>
+    <div class="timer">
+        <div id="timer">sec left</div>
+        <div class="timer-sec">00</div>
     </div>
-</div>--->
+    </header>
     <div class="container">
         <div id="question-container" class="hide">
     <div id="question">Question</div>
@@ -29,6 +30,18 @@
         <button id="start-btn" class="start-btn btn">Start</button>
         <button id="next-btn" class="next-btn btn hide">Next</button>
     </div>
+</div>
+<div class="result">
+    <div class="icon">
+        <i class="fas fa-crown"></i><div>
+            <div class="complete-text">You've completed the Quiz!</div>
+    </div>
+      <!---div class="score-container">-->
+     <div class="number">
+        <p class="score-title">Score</p>
+        <h1 class="main-score" id="score">0</h1>
+    </div>
+    </div>-
 </div>
     
 </body>

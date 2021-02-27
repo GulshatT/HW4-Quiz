@@ -1,5 +1,5 @@
-*::before, *::after {
-    box-sizing: :border-box;
+*,*::before, *::after {
+    box-sizing: border-box;
     font-family: Gotham Rounded;
 }
 
@@ -21,28 +21,34 @@ body {
     align-items: center;
 }
 
+.title, .time-text {
+    font-family: Gotham Rounded;
+    float: left;
+    padding: 0 0 20px;
+}
 .container {
     width: 600px;
-    mac-width: 80%;
+    max-width: 80%;
     font-size: 30px; 
     background-color: var(--white);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-
 }
+
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-    border
+    margin: 20px 0;
 }
 .btn {
     color: var(--white);
     background-color: var(--lavander);
     border-radius: 5px;
     padding: 5px 10px;
-    margin: 20px 0;  
+    outline: none;  
+    font-size: 20px;
 }
 
 .btn:hover {
@@ -53,26 +59,48 @@ body {
 }
 
 .btn.correct {
-    color: var(----correct);
+    background-color: var(--correct);
 }
 
 .btn.wrong {
-    color; var(--wrong);
+    background: var(--wrong);
 }
 .start-btn, .next-btn {
     font-size: 25px;
     font-weight: bold;
     padding: 10px 20px;    
 }
+#start-btn:hover, #next-btn:hover{
+    background-color: rgb(200, 208, 224);
+    color: var(--black);
+}
+
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .hide {
     display: none;
 }
 
+.title {
+    display: block;
+    height: 480px;
+    position: relative;
+}
+.result {
+    background: #fff;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
 @media screen and (max-width: 768px) {
     body {
         min-width: 40rem;
