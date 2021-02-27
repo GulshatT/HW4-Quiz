@@ -21,11 +21,14 @@ body {
     align-items: center;
 }
 
-.title, .timer {
-    font-family: Gotham Rounded;
-    padding: 0 0 20px;
-    float: left;   
+.title {
+  text-align: center;
+  color: var(--lavander);
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 20px;
 }
+
 .container {
     width: 600px;
     max-width: 80%;
