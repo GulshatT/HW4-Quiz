@@ -21,10 +21,10 @@ body {
     align-items: center;
 }
 
-.title, .time-text {
+.title, .timer {
     font-family: Gotham Rounded;
-    float: left;
     padding: 0 0 20px;
+    float: left;   
 }
 .container {
     width: 600px;
@@ -90,6 +90,7 @@ body {
     height: 480px;
     position: relative;
 }
+
 .result {
     background: #fff;
     width: 450px;
